@@ -19,14 +19,19 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+		<style>
+			th{text-align:center;}
+			tr{text-align:center;}
+		</style>
+
 	</head>
 
-	<table id="test" class="display table-striped">
-		<thead align="center">
-			<tr> <th>Post								</th> <th>Member		</th> <th>ClassNo.	</th> </tr>	
+	<table id="test" class="table-striped table-hover">
+		<thead>
+			<tr> <th>Post</th> <th>Member</th> <th>ClassNo.</th> </tr>	
 		</thead>
-		<tbody align="center">
-			<tr align="center"> <td>Chairperson 						</td> <td>Tong Tsz Wang	</td> <td>5B31		</td> </tr>	
+		<tbody>
+			<tr> <td>Chairperson 						</td> <td>Tong Tsz Wang	</td> <td>5B31		</td> </tr>	
 			<tr> <td>Vice-chairman						</td> <td>Lai Tsz Ying	</td> <td>5C04		</td> </tr>
 			<tr> <td>Treasurer							</td> <td>Choi Tsz Tsun	</td> <td>4A16		</td> </tr>
 			<tr> <td rowspan="3">Cultrual Secretary		</td> <td>Wong Nga Wing	</td> <td>5C14		</td> </tr>
