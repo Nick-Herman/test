@@ -23,7 +23,7 @@
 
 <div class="container"> <!--container for alignment-->
 
-<div id= "header" class="animated shadow fadeInUp" style="font-size:80px;font-family:'advent pro';padding-top:15%">Welcome to Science Club!</div> <!--header-->
+<div id= "header" class="animated shadow fadeInUp" style="font-size:80px;font-family:'advent pro'">Welcome to Science Club!</div> <!--header-->
 </div>
 
 </body>
