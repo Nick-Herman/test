@@ -1,0 +1,48 @@
+<Module>
+<ModulePrefs title="Custom Gadget"/>
+<Content type="html">
+<![CDATA[
+<html>
+
+<head>
+
+<!--scripts and css-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/Nick-Herman/test/master/homepage/sQuotes.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Nick-Herman/test/master/homepage/extra.css">
+  	<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+  	<link href='https://fonts.googleapis.com/css?family=Bellefair' rel='stylesheet'>
+  	<link href='https://fonts.googleapis.com/css?family=Contrail One' rel='stylesheet'>
+
+</head>
+
+
+<body class="" style="background-color:rgba(0,137,201,1)"> <!--bgcolor-->
+
+<div class="container"> <!--container for alignment-->
+
+<div id= "header" class="animated shadow fadeInUp" style="font-size:80px;font-family:'advent pro';padding-top:15%">Welcome to Science Club!</div> <!--header-->
+</div>
+
+</body>
+
+  	<script>
+	$(function(){
+			$('#header').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				var header2 = '<div class="animated shadow fadeInUp" style="font-family:\'bellefair\';font-size:25px;padding-top:1%">'+quoteGen[0]+'</div>'+ 
+								'<div class="animated shadow fadeInUp" style="font-family:\'contrail one\';font-size:15px;padding-top:1%">'+quoteGen[1]+'</div>';
+
+				var button = '<a id="anchorbth" href="https://sites.google.com/a/hkcwcc.edu.hk/scienceclub/testing">'+
+							 '<button id="tourbtn" class="animated shadow fadeInUp">CHECK OUT OUR YEAR PLAN</button></a>';
+				$(this).after(header2, button);
+			});
+		});
+	</script>
+
+
+</html>
+]]>
+</Content>
+</Module>
