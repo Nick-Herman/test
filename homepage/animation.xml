@@ -11,12 +11,13 @@
 	<!--jquery&styling-->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://rawgit.com/Nick-Herman/test/master/homepage/sQuotes.js"></script>
+	<script type="text/javascript" src="sQuotes.js"></script>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Nick-Herman/test/master/homepage/extra.css">
+  	<link rel="stylesheet" type="text/css" href="extra2.css">
 
 	<!--scrollpage-->
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
 
@@ -124,7 +125,7 @@
 		
 		<div class="section" style="background-color:rgba(153, 204, 0, 1)">
 			<div id="thirdheader" class="animated" style="font-size:80px;font-family:'advent pro';padding-top:3%;padding-bottom:2%" data-centered='false'>Member List</div>
-				<div id="slide1" class="slide animated" data-anchor="slide1">
+<!-- 				<div id="slide1" class="slide animated" data-anchor="slide1"> -->
 					<table id="memberlist" class="table table-hover">
 						<thead>
 							<tr> <th class="boxalign">Post</th> <th class="boxalign">Member</th> <th class="boxalign">ClassNo.</th> </tr>	
@@ -144,7 +145,7 @@
 							<tr> <td>Committee Member					</td> <td>Yeung Yu Hei	</td> <td>5A32		</td> </tr>
 							<tr> <td>Committee Member					</td> <td>Lee Ching Yuet</td> <td>4A22		</td> </tr>
 							<tr> <td>Committee Member					</td> <td>Chan Kai Chun	</td> <td>4B11		</td> </tr>
-						</tbody>
+<!-- 						</tbody>
 					</table>
 				</div>
 				<div id="slide2" class="slide animated" data-anchor="slide2">
@@ -152,7 +153,7 @@
 						<thead>
 							<tr> <th class="boxalign">Post</th> <th class="boxalign">Member</th> <th class="boxalign">ClassNo.</th> </tr>	
 						</thead>
-						<tbody class="boxalign">
+						<tbody class="boxalign"> -->
 							<tr> <td>Committee Member					</td> <td>Lam Wing Kwan	</td> <td>4B03		</td> </tr>
 							<tr> <td>Committee Member					</td> <td>Pang Wai Ching</td> <td>4A08		</td> </tr>
 							<tr> <td>Committee Member					</td> <td>Tong Tsz Long	</td> <td>3C28		</td> </tr>
@@ -162,7 +163,7 @@
 							<tr> <td>Committee Member					</td> <td>Chow Yip Ching</td> <td>3A27		</td> </tr>
 						</tbody>
 					</table>
-				</div>
+				<!-- </div> -->
 	</div>
 
 	</div>
@@ -186,6 +187,7 @@
 				slidesNavigation: true,
 				controlArrows: false,
 				verticalCentered: false,
+				scrollOverflow:true,
 
 				afterLoad: function(anchorLink, index)
 				{
@@ -248,8 +250,10 @@
 						$('#thirdheader, #memberlist, #memberlistp2').removeClass('fadeInUp');
 						$('#thirdheader, #memberlist, #memberlistp2').addClass('fadeOut')
 					}
+					
 				}
 			});
+			$.fn.fullpage.reBuild();
 		});
 	</script>
 </html>
