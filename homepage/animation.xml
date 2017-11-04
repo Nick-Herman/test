@@ -7,41 +7,251 @@
 <head>
 
 <!--scripts and css-->
-	
+
+	<!--jquery&styling-->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://rawgit.com/Nick-Herman/test/master/homepage/sQuotes.js"></script>
+	<script type="text/javascript" src="sQuotes.js"></script>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Nick-Herman/test/master/homepage/extra.css">
+  	<link rel="stylesheet" type="text/css" href="extra2.css">
+
+	<!--scrollpage-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+
+	<!--bootstrap-->
+
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--fonts-->
+
   	<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
   	<link href='https://fonts.googleapis.com/css?family=Bellefair' rel='stylesheet'>
   	<link href='https://fonts.googleapis.com/css?family=Contrail One' rel='stylesheet'>
 
+
+
 </head>
 
 
-<body class="" style="background-color:rgba(0,137,201,1)"> <!--bgcolor-->
+<body>
 
-<div class="container"> <!--container for alignment-->
+	<!--wrapper-->
 
-<div id= "header" class="animated shadow fadeInUp" style="font-size:80px;font-family:'advent pro'">Welcome to Science Club!</div> <!--header-->
-</div>
+	<div id="fullpage" class="boxalign">
+
+		<!--first page-->
+
+		<div id="first" class="section" style="background-color:rgba(0,137,201,1)">
+			<div id="in-wrapper01" class="alignment">
+				<div id= "header" class="animated blackshadow" style="font-size:80px;font-family:'advent pro'">Welcome to Science Club!</div>
+				<div id= "header2" class="animated blackshadow" style="font-family:'bellefair';font-size:25px;padding-top:1%"></div>
+				<div id= "header3" class="animated blackshadow" style="font-family:'contrail one';font-size:15px;padding-top:1%"></div>
+				<a id="anchorbtn" href="#secondPage">
+				<button id="tourbtn" class="animated blackshadow" style="color:white">CHECK OUT OUR YEAR PLAN</button>
+				</a>
+			</div>
+		</div>
+
+		<!--second page-->
+
+		<div id="second" class="section" style="background-color:rgba(255,140,26,1)">
+			<div id="secondheader" class="animated" style="font-size:80px;font-family:'advent pro';padding-top:3%;padding-bottom:2%" data-centered='false'>Year Plan</div>
+				<table id="yearplan" class="table table-striped table-hover animated">
+					<thead>
+						<tr>
+							<th class="boxalign">
+								Date
+							</th>
+							<th class="boxalign">
+								Event
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>September</td>
+							<td>Board Design</td>
+						</tr>
+						<tr>
+							<td>September 30</td>
+							<td>Visit to Innotech Expo</td>
+						</tr>
+						<tr>
+							<td>November</td>
+							<td>Physics Regular Activity</td>
+						</tr>
+						<tr>
+							<td>December</td>
+							<td>Biology Regular Activity</td>
+						</tr>
+						<tr>
+							<td>December 16-17</td>
+							<td>Joint School Astronomy Camp</td>
+						</tr>
+						<tr>
+							<td>February</td>
+							<td>IS Regular Activity</td>
+						</tr>
+						<tr>
+							<td>March</td>
+							<td>Chemistry Regular Activity</td>
+						</tr>
+						<tr>
+							<td>March 27</td>
+							<td>Shenzhen high-tech development study tour</td>
+						</tr>
+						<tr>
+							<td>April</td>
+							<td>Activity with maths club</td>
+						</tr>
+						<tr>
+							<td>May</td>
+							<td>IS Regular Activity</td>
+						</tr>
+						<tr>
+							<td>Optional</td>
+							<td>University Visit/ Science talk by professor</td>
+						</tr>
+					</tbody>
+			</table>
+		</div>
+
+		<!--third page-->
+		
+		<div class="section" style="background-color:rgba(153, 204, 0, 1)">
+			<div id="thirdheader" class="animated" style="font-size:80px;font-family:'advent pro';padding-top:3%;padding-bottom:2%" data-centered='false'>Member List</div>
+				<div id="slide1" class="slide animated" data-anchor="slide1">
+					<table id="memberlist" class="table table-hover">
+						<thead>
+							<tr> <th class="boxalign">Post</th> <th class="boxalign">Member</th> <th class="boxalign">ClassNo.</th> </tr>	
+						</thead>
+						<tbody class="boxalign">
+							<tr> <td>Chairperson 						</td> <td>Tong Tsz Wang	</td> <td>5B31		</td> </tr>	
+							<tr> <td>Vice-chairman						</td> <td>Lai Tsz Ying	</td> <td>5C04		</td> </tr>
+							<tr> <td>Treasurer							</td> <td>Choi Tsz Tsun	</td> <td>4A16		</td> </tr>
+							<tr> <td>Cultrual Secretary					</td> <td>Wong Nga Wing	</td> <td>5C14		</td> </tr>
+							<tr> <td>Cultrual Secretary					</td> <td>Lau Hoi Yung	</td> <td>5C05		</td> </tr>
+							<tr> <td>Cultural Secretary					</td> <td>Ng Kam Ling	</td> <td>4A07		</td> </tr>
+							<tr> <td>Publicity							</td> <td>Ng Wing Ki	</td> <td>5B12		</td> </tr>
+							<tr> <td>Publicity							</td> <td>Yiu Hing Suen	</td> <td>4E29		</td> </tr>
+							<tr> <td>IT									</td> <td>Yeung Pui Him	</td> <td>5B32		</td> </tr>
+							<tr> <td>General Affairs Secretary			</td> <td>Leung Man Tsun</td> <td>5C27		</td> </tr>
+							<tr> <td>Honorary Secretary					</td> <td>Lau Ho Wang	</td> <td>5C23		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Yeung Yu Hei	</td> <td>5A32		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Lee Ching Yuet</td> <td>4A22		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Chan Kai Chun	</td> <td>4B11		</td> </tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="slide2" class="slide animated" data-anchor="slide2">
+					<table id="memberlistp2" class="table table-hover">
+						<thead>
+							<tr> <th class="boxalign">Post</th> <th class="boxalign">Member</th> <th class="boxalign">ClassNo.</th> </tr>	
+						</thead>
+						<tbody class="boxalign">
+							<tr> <td>Committee Member					</td> <td>Lam Wing Kwan	</td> <td>4B03		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Pang Wai Ching</td> <td>4A08		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Tong Tsz Long	</td> <td>3C28		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Wong Choi Hei	</td> <td>3A34		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Iu Kai Yeung	</td> <td>3A28		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Lam Kar Hay	</td> <td>3A29		</td> </tr>
+							<tr> <td>Committee Member					</td> <td>Chow Yip Ching</td> <td>3A27		</td> </tr>
+						</tbody>
+					</table>
+				</div>
+	</div>
+
+	</div>
+
+	<!--endwrapper-->
 
 </body>
 
-  	<script>
-	$(function(){
-			$('#header').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-				var header2 = '<div class="animated shadow fadeInUp" style="font-family:\'bellefair\';font-size:25px;padding-top:1%">'+quoteGen[0]+'</div>'+ 
-								'<div class="animated shadow fadeInUp" style="font-family:\'contrail one\';font-size:15px;padding-top:1%">'+quoteGen[1]+'</div>';
+	<script>
+		$(document).ready(function(){
+			$('#header2').html(quoteGen[0]); /*fetch quote*/
+			$('#header3').html(quoteGen[1]); /*fetch quoter*/
+			$('#fullpage').fullpage({ 
+				menu: false,
+				lockAnchors: false,
+				anchors:['firstPage', 'secondPage', 'thirdPage'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['<b>HOMEPAGE</b>', '<b>YEARPLAN</b>', '<b>MEMBERLIST</b>'],
+				showActiveTooltip: false,
+				slidesNavigation: true,
+				controlArrows: false,
+				verticalCentered: false,
 
-				var button = '<a id="anchorbth" href="https://sites.google.com/a/hkcwcc.edu.hk/scienceclub/testing">'+
-							 '<button id="tourbtn" class="animated shadow fadeInUp">CHECK OUT OUR YEAR PLAN</button></a>';
-				$(this).after(header2, button);
+				afterLoad: function(anchorLink, index)
+				{
+					var loadedSection = $(this);
+					if(index == 1)
+					{
+						$('#header, #header2, #header3, #anchorbtn, #tourbtn').removeClass('fadeOut');
+						$('#header, #header2, #header3, #anchorbtn, #tourbtn').addClass('fadeInUp');
+					}
+
+					if(index == 3)
+					{
+						$('#thirdheader, #memberlist, #memberlistp2').removeClass('fadeOut');
+						$('#thirdheader, #memberlist, #memberlistp2').addClass('fadeInUp');
+					}
+				},
+				onLeave: function(index, nextIndex, direction)
+				{
+					var leavingSection = $(this);
+					if(index == 1 && direction=='down')
+					{
+						//page 1
+						$('#header, #header2, #header3, #anchorbtn, #tourbtn').removeClass('fadeInUp');
+						$('#header, #header2, #header3, #anchorbtn, #tourbtn').addClass('fadeOut');
+
+						//page 2
+						$('#secondheader, #yearplan').removeClass('fadeOut');
+						$('#secondheader, #yearplan').addClass('fadeInUp');
+					}
+
+					if(index == 2 && direction=='up')
+					{
+						//page 1
+						$('#header, #header2, #header3, #anchorbtn, #tourbtn').removeClass('fadeOut');
+						$('#header, #header2, #header3, #anchorbtn, #tourbtn').addClass('fadeInUp');
+
+						//page 2
+						$('#secondheader, #yearplan').removeClass('fadeInUp');
+						$('#secondheader, #yearplan').addClass('fadeOut');
+					}
+
+					if(index == 2 && direction=='down')
+					{
+						//page 2
+						$('#secondheader, #yearplan').removeClass('fadeInUp');
+						$('#secondheader, #yearplan').addClass('fadeOut');
+
+						//page 3
+						$('#thirdheader, #memberlist, #memberlistp2').removeClass('fadeOut');
+						$('#thirdheader, #memberlist, #memberlistp2').addClass('fadeInUp');
+					}
+
+					if(index==3 && direction=='up')
+					{
+						//page 2
+						$('#secondheader, #yearplan').removeClass('fadeOut');
+						$('#secondheader, #yearplan').addClass('fadeInUp');
+
+						//page 3
+						$('#thirdheader, #memberlist, #memberlistp2').removeClass('fadeInUp');
+						$('#thirdheader, #memberlist, #memberlistp2').addClass('fadeOut')
+					}
+				}
 			});
 		});
 	</script>
-
-
 </html>
 ]]>
 </Content>
