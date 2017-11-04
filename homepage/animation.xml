@@ -72,7 +72,7 @@
 							</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody class="boxalign">
 						<tr>
 							<td>September</td>
 							<td>Board Design</td>
