@@ -1,16 +1,20 @@
-*
+#first
 {
 	color:white;
 }
 
-.shadow
+.blackshadow
 {
 	text-shadow:2px 2px 10px #666666;
 }
 
-.container
+.whiteshadow
 {
-/* 	margin:0 auto; */
+	text-shadow:2px 2px 10px #b3b3b3;
+}
+
+.boxalign
+{
 	text-align:center;
 }
 
@@ -29,4 +33,11 @@
 {
 	background-color:rgba(26,179,235,1);
 	cursor:pointer;
+}
+
+.alignment
+{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
 }
